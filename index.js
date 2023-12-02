@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 
 const authRoutes = require('./Routes/authRoutes');
+const userRoutes = require('./Routes/userRoutes');
 const cardRoutes = require('./Routes/cardRoutes');
 const investmentRoutes = require('./Routes/investmentRoutes');
 
@@ -29,6 +30,7 @@ db.once('open', () => console.log('Connected to MongoDB database'));
 
 app.use('/auth', authRoutes);
 app.use('/card', cardRoutes);
+app.use('/user', userRoutes);
 app.use('/investment', investmentRoutes);
 
 const PORT = process.env.PORT || 3000;
