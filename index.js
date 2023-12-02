@@ -25,7 +25,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => console.log('Connected to MongoDB database'));
 
 
-passport.use(require('../passport'));
+//passport.use(require('./Passport'));
 
 app.use('/auth', authRoutes);
 app.use('/card', cardRoutes);
