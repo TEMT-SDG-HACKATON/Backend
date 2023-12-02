@@ -4,6 +4,7 @@
   "description": "TEMT-SDG-BACKEND",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +18,11 @@
   },
   "homepage": "https://github.com/TEMT-SDG-HACKATON/Backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^8.0.2",
+    "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0"
   }
 }
